@@ -186,7 +186,7 @@ client.on("message", message => { //clear
 client.on('ready', () =>{
   console.log(By NaSto ${client.user.tag}!);
 });
-var prefix = '#'
+var prefix = '+'
 
 client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
