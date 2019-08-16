@@ -139,7 +139,7 @@ client.on('message',async message => {  //WESO#0001
   - \`${prefix}clan accept\`: لقبول شخص وجعل الشخص يدخل الكلان ( يتطلب صلاحية الادمن ) ء
   - \`${prefix}clan decline\`: لرفض شخص وعم جعل الشخص يدخل الكلان ( يطلب صلاحية الادمن ) ء
   - \`${prefix}clan room\`: لعمل روم شات او كتابي بأسم الكلان ( صاحب الكلان فقط ) ء`)
-  .setFooter(message.author.username, message.author.avatarURL);  //WESO#0001
+  .setFooter(message.author.username, message.author.avatarURL);  //YOUSEF GAMER
   message.channel.send(embed);
 }
  
@@ -152,11 +152,11 @@ client.on('message',async message => {  //WESO#0001
         if(collected.first().content.length > 25) return message.channel.send("**# لا يمكنك وضع اسم للكلان يفوق الـ25 حرفا , أعد كابة الأمر**");
         if(collected.first().content.includes("None")) return message.channel.send("**# `None`, لا يمكنك وضع هذه الكلمة كأسم للكلان**");
         collected.first().delete().catch();
-        nameClan = collected.first().content;  //WESO#0001
+        nameClan = collected.first().content;  //YOUSEF GAMER
       });
  
-      m = await m.edit('**# جارى عمل الكلان**');  //WESO#0001
-      awaited = await setTimeout(async() => {  //WESO#0001
+      m = await m.edit('**# جارى عمل الكلان**');  //YOUSEF GAMER
+      awaited = await setTimeout(async() => {  //OB,yousef gamer 
         let membersArray = {
           nameClan: {
             array: []
